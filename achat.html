@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accueil</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="fonticons/css/font-awesome.min.css">
+	<script src="jquery/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<!-- login -->
+		<div class="row">
+			<div class="col-md-12 ">
+				<h3 class="text-center text-black rounded  py-3">OPTIMISONS NOTRE GESTION</h3>
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				  <!-- Brand/logo -->
+				  <a class="navbar-brand" href="#">
+				    <img src="images/image_11.png" alt="logo" style="width:40px;">
+				  </a>
+				  
+				  <!-- Links -->
+				  <ul class="navbar-nav">
+				    <li class="nav-item">
+				      <a class="nav-link" href="#"><i class="fa fa-folder-o"></i> Approvisionnement</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#"><i class="fa fa-clipboard"></i> Stocks </a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#"><i class="fa fa-money"></i> Caisse</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#"><i class="fa fa-credit-card"></i> Charges</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#"><i class="fa fa-address-book"></i> Clients/Fournisseurs</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#"><i class="fa fa-bank"></i> Banque</a>
+				    </li>
+				  </ul>
+				</nav>
+
+				
+			</div>
+		</div>
+		<div class="container-fluid px-3 py-3 ">
+			<div class="row ">
+				<div class="col-md-4 px-5">
+					<h6 class="text-light">ADMINISTRATION</h6>
+					<div class="list-group">
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-folder-o"></i> Gestion de l’approvisionnement </a>
+
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-clipboard"></i> Gestion du stock </a>
+
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-money"></i> Gestion de la caisse</a>
+
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-credit-card"></i> Gestion des charges</a>
+
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-address-book"></i> Gestion clients/fournisseurs</a>
+
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-bank"></i> Banque</a>
+					       
+					          <a class="list-group-item list-group-item-action" href="#"><i class="fa fa-user-circle"></i> Gestion des membres</a>
+					</div>			
+				</div>
+				<div class="col-md-8">
+					<div class="row ">
+						<div class="col-md-6 offset-md-3 ">
+
+							<div class="card">
+								<div class="card-header bg-grey text-black text-center ">
+									<h3>Achat</h3>
+								</div>
+								<div class="card-body bg-dark text-light small">
+									  		<form action="" >
+									  			<div class="form-group ">
+										            <label for="reference">Référence</label>
+										            <input class = "form-control " placeholder="" id= "firstname" type="text" name="firstname">
+									        	</div>
+									        	<div class="form-group">
+										            <label for="nom">Nom  </label>
+										            <input class = "form-control" placeholder="Le nom du produit" id= "lastname" type="text" name="nom" required>
+									        	</div>
+									        	<div class="form-group">
+										            <label for="prix">Prix</label>
+										            <input class = "form-control" placeholder="Le prix du produit" id= "prix" type="number" name="prix" required>
+									        	</div>
+									        	<div class="form-group">
+										            <label for="quantite">Quantité  </label>
+										            <input class = "form-control" placeholder="Le quantite acheté" id= "quantite" type="number" name="quantite" required>
+									        	</div>
+									        	<div class="form-group">
+										            <label for="date">Date</label>
+										    		<input type="Date" class="form-control" id="datea">  
+									    		</div>
+									            
+									            <br class="mb3">
+
+
+									        
+									            	<input class ="btn btn-success btn-block" type="submit" id ='register' name="valider"  value="Valider" data-toggle="collapse" data-target="#alert_success">
+									            	<input class ="btn btn-danger btn-block" type="reset" id ='reset' name="annuler"  value="Annuler">
+									            
+									            
+									        </form>
+									 </div>
+									  
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+
+<!-- tableau Achat -  BEGIN-->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="container-fluid  px-3 py-3">
+					<h3 class="text-light ">Listes des achats</h3>
+					<table class="table table-hover table-dark text-sm ">
+				    <thead>
+				      <tr>
+				        <th>Référence produit</th>
+				        <th>Nom du produit</th>
+				        <th>Prix</th>
+				        <th>Quantité</th>
+				        <th>Date</th>
+				        <th>Actions</th>
+				      </tr>
+				    </thead>
+				    <tbody class="small">
+				      <tr>
+				        <td>P4C</td>
+				        <td>Paper Clips</td>
+				        <td>1000</td>
+				        <td>100</td>
+				        <td>14/02/2021</td>
+				        <td>
+				        	<div class="btn-group btn-group-sm">
+								  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Action
+								    <span class="caret"></span>
+								  </button>
+								  <div class="dropdown-menu">
+								    <a class="dropdown-item" href="#">Modifier</a>
+								    <a class="dropdown-item" href="#">Supprimer</a>
+								  </div>
+								</div>
+				        </td>
+				      </tr>
+				      <tr>
+				        <td>P4C</td>
+				        <td>Paper Clips</td>
+				        <td>1000</td>
+				        <td>100</td>
+				        <td>14/02/2021</td>
+				        <td>
+				        	<div class="btn-group btn-group-sm">
+								  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Action
+								    <span class="caret"></span>
+								  </button>
+								  <div class="dropdown-menu">
+								    <a class="dropdown-item" href="#">Modifier</a>
+								    <a class="dropdown-item" href="#">Supprimer</a>
+								  </div>
+								</div>
+				        </td>
+				      </tr>
+				      <tr>
+				        <td>P4C</td>
+				        <td>Paper Clips</td>
+				        <td>1000</td>
+				        <td>100</td>
+				        <td>14/02/2021</td>
+				        <td>
+				        	<div class="btn-group btn-group-sm">
+								  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Action
+								    <span class="caret"></span>
+								  </button>
+								  <div class="dropdown-menu">
+								    <a class="dropdown-item" href="#">Modifier</a>
+								    <a class="dropdown-item" href="#">Supprimer</a>
+								  </div>
+								</div>
+				        </td>
+				      </tr>
+				     
+				    </tbody>
+				  </table>
+				</div>
+				
+			</div>		
+		</div>
+<!-- tableau Achat - END-->
+<!-- footer BEGIN-->
+<div class="container-fluid ">
+	<div class="row bg-dark entete py-3">
+		<div class="col-md-4 ">
+			<h3 class=""> Devéloppons ensebmle</h3>
+			<small ar>
+				Le pat que tu fera aujourd'hui est un pat qui te fera rapprocher de ta destiné.
+			</small>
+		</div>
+		<div class="col-md-4 offset-md-4">
+			<h5> Rarnofy</h5>
+			<p class="small">RAOTOARIFENO <br>
+			Sendranarivo Victorien	<br>
+			<i class="fa fa-phone"></i>  +261 34 69 340 76</p>
+		</div>
+	</div>
+</div>
+<!-- footer END-->
+
+</body>
+</html>

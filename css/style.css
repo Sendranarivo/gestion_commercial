@@ -1,0 +1,21 @@
+body{
+	background-image: url("../images/image_6.jpg") ;
+	background-size:cover;
+
+}
+
+
+.bg-block{
+	background-color: white;
+	
+}
+
+.opac{
+	opacity: .4;
+}
+.entete{
+	background-color: #33a6cc;
+	font-family: Trebuchet MS, sans-serif;
+	opacity: 5;
+	color: white;
+}
